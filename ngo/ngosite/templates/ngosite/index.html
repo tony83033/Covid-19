@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'ngosite/index.css' %}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>COVID-19</title>
+
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg nav_style p-3" id="home">
+        <a class="navbar-brand pl-5" href="#">Covid-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#symptons">symptoms</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#prevention">prevention</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#help">Need Help</a>
+              </li>
+            
+           
+          </ul>
+         
+        </div>
+      </nav>
+
+
+      
+      <div class="main_header mt-5">
+      
+          <div class="row w-100 h-100">
+              <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+                  <div class="leftside w-100 h-100 d-flex justify-content-center align-item-center">
+                      <img src="{% static 'ngosite/img/chain.png' %}" alt="" width="360" height="300">
+                  </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+                  <div class="rightside w-100 h-100 d-flex justify-content-center align-item-center mt-5">
+                      <h1 class="mt-4"> Let's stay safe & Fight Together Against Cor<span class="covid_rot">
+                      {% load static %}
+                          <img src="{%static 'ngosite/img/covid.png' %}" alt="" width="90" height="90">
+                          </span> na Virus</h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+            <!-- ================Covid-19 Update =========== -->
+            <section class="covid_update">
+
+              <div class="mb-3 mt-4">
+                  <h1 class="text-uppercase text-capitalize text-center" id="covid_color"> covid-19 update</h1>
+              </div>
+
+              <div class="container mt-5" >
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-sm-3 col-12 order-lg-1 order-2">
+                    <h1 class="count text-center" id="total-case">2,92,74,823</h1>
+                    <p class="text-center">Total cases</p>
+
+                  </div>
+
+                  <div class="col-lg-3 col-sm-3 col-12 order-lg-1 order-2">
+                    <h1 class="count text-center">3,63,079</h1>
+                    <p class="text-center">Deaths</p>
+
+                  </div>
+
+                  <div class="col-lg-3 col-sm-3 col-12 order-lg-1 order-2">
+                    <h1 class="count text-center">24,02,81,903</h1>
+                    <p class="text-center">Total doses given</p>
+
+                  </div>
+
+                  <div class="col-lg-3 col-sm-3 col-12 order-lg-1 order-2">
+                    <h1 class="count text-center">4,59,55,907</h1>
+                    <p class="text-center">People fully vaccinated</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ==========About section================ -->
+            
+            <div class="container-fluid sub_section pt-5 pb-5 " id="about">
+              <div class="section_header text-center mb-5 mt-4">
+                <h1>About COVID-19</h1>
+              </div>
+              <div class="row">
+              <div class="col-lg-5 col-md-6 col-12  ml-lg-4">
+                <img src="{% static 'ngosite/img/virus.jpg' %}" alt="" class="img-fluid">
+
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <h1> What is COVID-19 (Corona Virus)</h1>
+                <p>Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China in December 2019. </p>
+                <p> The World Health Organization declared a Public Health Emergency of International Concern regarding COVID-19 on 30 January 2020, and later declared a pandemic on 11 March 2020. As of 11 June 2021, more than 174 million cases have been confirmed, with more than 3.77 million confirmed deaths attributed to COVID-19, making it one of the deadliest pandemics in history.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Covid-19 symptons -->
+           
+          
+
+          <div class="container-fluid pt-5 pb-5">
+
+            <div class="section_header text-center mb-5 mt-4" id="symptons">
+              <h1>Coronavirus symptons</h1>
+
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/cough.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>cough</figcaption>
+                </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/nose.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>runny nose</figcaption>
+                </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/fiver.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>fiver</figcaption>
+                </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/cold.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>cold</figcaption>
+                </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/tiredness.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>tiredness</figcaption>
+                </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5">
+                  <figure class="text-center">
+                  <img src="{% static 'ngosite/img/brsath.png' %}" alt="" class="img-fluid" width="120">
+                  <figcaption>difficulty in breathing</figcaption>
+                </figure>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="text-center mb-5 mt-4" id="prevention">
+              <h1>Prevention Against coronavirus</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <figure class="text-center">
+                <img src="{% static 'ngosite/img/prevention.png' %}" alt="">
+              </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================Need Help=========================== -->
+
+          <div class="container mt-4" id="help">
+            <div class="text-center mb-5 mt-4">
+              <h1>Ask for Help</h1>
+            </div>
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your First name</label>
+                <input type="text" class="form-control" id="first-name" name="first-name" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <label for="exampleInputEmail1">Enter your Last name</label>
+                <input type="text" class="form-control" id="last-name" name="last-name" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your States</label>
+                <select class="form-control" nmae="states" required>
+                 
+                  <option>Select your States</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value=" Odisha"> Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value=" Sikkim"> Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu </option>
+                  <option value="Telangana ">Telangana </option>
+                  <option value="Tripura ">Tripura </option>
+                  <option value="Uttar Pradesh">Uttar Pradesh </option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                  
+                </select>
+
+              
+              </div>
+
+            </div>
+
+            <div class="row pt-4">
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your citie name</label>
+                <input type="text" class="form-control" id="citie" name="citie" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your PIN code </label>
+                <input type="number" class="form-control" id="pin" name="pin" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your Phone number</label>
+                <input type="number" class="form-control" id="phone" name="phone" maxlength="10" minlength="10" aria-describedby="emailHelp" required>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >Enter your Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <label >What kind of help you Want</label>
+                <select name="help" id="help" class="form-control" required>
+                  <option value="medical">Medical Help</option>
+                  <option value="Food">Food Help</option>
+                </select>
+              </div>
+
+             
+            </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Elaborate your concern</label>
+                <textarea class="form-control" id="concern" name="concern" rows="4"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary mb-4">Submit</button>
+            </form>
+          </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
